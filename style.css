@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+:root {
+  --main-font: 'Sometype Mono', monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--main-font);
+}
+
+/*HEADER*/
+
+.header-container {
+  background-color: #333333;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.game-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+/*MAIN CONTENTS*/
+.main-container {
+  background-color: #36393e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.55rem;
+  gap: 3.5rem;
+  height: 80vh;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(3, 160px);
+}
+
+.cell {
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 140px;
+  background-color: #424549;
+  cursor: pointer;
+}
+
+.restart-button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: #4f46e5;
+  color: white;
+}
+
+.restart-button:hover {
+  color: white;
+  background-color: #6366f1;
+  transition: 0.2s;
+}
+
+.restart-button:active {
+  color: #6366f1;
+  background-color: white;
+  transition: 0.2s;
+}
+/*FOOTER*/
+
+.footer {
+  height: 5vh;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333; /* Set the background color of the footer */
+  color: #ffffff; /* Set the text color of the footer */
+  padding: 20px; /* Add some padding for better spacing */
+  transition: 0.1s;
+}
